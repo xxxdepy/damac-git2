@@ -1,0 +1,26 @@
+.damac-footer {
+	color: #333;
+	background-color: var(--primary);
+}
+
+
+.footersocialmedia {
+	display: flex;
+	flex-wrap: wrap;
+}
+.footersocialmedia a {
+    display: block;
+    padding: 0px 10px;
+    margin-right: 10px;
+    font-size: 1.25em;
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+}
+
+.footersocialmedia a:hover {
+    opacity: 0.8;
+    color: #fff;
+}
