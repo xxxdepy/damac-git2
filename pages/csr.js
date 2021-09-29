@@ -29,6 +29,7 @@ function CSR() {
       <Head>
         <title>Damac - Corporate Social Responsibility</title>
         <meta name="description" content="Corporate Social Responsibility - Damac Properties" />
+        
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

@@ -42,7 +42,7 @@ function About() {
        // { deviceWidth: 768 } // `device` prop
   );
 
-  const isMobile = useMediaQuery(
+  const isMobileWidth = useMediaQuery(
        { maxDeviceWidth: 767 },
        // { deviceWidth: 767 } // `device` prop
   );
@@ -52,6 +52,7 @@ function About() {
 
       <Head>
         <title>Damac - About</title>
+
         <meta name="description" content="About Us - Damac Properties" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -157,7 +158,7 @@ function About() {
                     </div>
                   }
 
-                  { isMobile && 
+                  { !isDesktopOrLaptop && 
                     <div className="chairmanPhoto-mobile">
                       <Image src="/images/chairmanphotomob.jpg" width={342} height={338}/>
                     </div>

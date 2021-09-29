@@ -1,5 +1,5 @@
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { renderToString } from 'react-dom/server'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -9,6 +9,7 @@ import ActiveLink from './ActiveLink'
 // React Responsive
 import { Context as ResponsiveContext } from 'react-responsive'
 import { useMediaQuery } from 'react-responsive'
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
 
 
@@ -18,11 +19,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-regular-svg-icons'
 
 
-
-
-
-
 export default function Navbar({ className, children, navbarStyle }) {
+
+
+
+
   
   // const slideOutMenu = {
   //   visible: false,
@@ -41,15 +42,23 @@ export default function Navbar({ className, children, navbarStyle }) {
 
   // 
 
-  const isDesktopOrLaptop = useMediaQuery(
-       { minDeviceWidth: 768 },
-       // { deviceWidth: 768 } // `device` prop
-  ); 
+  let ssrDeviceWidth = 769;
+  if ( isMobile ) {
+    ssrDeviceWidth = 767;
+  }
 
-  const isMobile = useMediaQuery(
-       { maxDeviceWidth: 767 },
-       // { deviceWidth: 767 } // `device` prop
+  const isDesktopOrLaptopWidth = useMediaQuery(
+       // { query: '(min-width: 768px)' }
+       { minDeviceWidth: 768 },
+       // { deviceWidth: ssrDeviceWidth}   
   );
+
+  const isMobileWidth = useMediaQuery(
+       { maxDeviceWidth: 767 }, 
+       // { deviceWidth: ssrDeviceWidth }
+  );
+
+
 
 
 
@@ -59,106 +68,105 @@ export default function Navbar({ className, children, navbarStyle }) {
     navbarLogo = "/images/damac-logo-dark.png";
   }
 
- 
+
 
   return (
     
 
     <header className={`damac-header damac-nav  ${className} ${ slideOutMenuVisible ? 'slideout-active' : 'slideout-not-active'} `}>
+          
 
- 
-          { isMobile && 
-
-
-               <div className={ `mobileNavContainer` }>
-                 <div className="container">
-                   <div className="row justify-content-between">
-                     <div className="col-7">
-                       <div className="damac-logo text-start">
-                         <a href="/" className="damac-home-link">
-                             <Image src={ navbarLogo } width={139} height={15}/>
-                         </a>
-                       </div>
-                     </div>
-                     <div className="col-5">
-                       <div className="d-flex justify-content-end">
-                         <div className="menuicon-wrapper">
-                           <a href="#" className="mainmenutoggle" onClick={handleMenuToggle}></a>
-                         </div>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-
-            
+          { !isDesktopOrLaptopWidth && 
+            <div className={ `mobileNavContainer` }>
+              <div className="container">
+                <div className="row justify-content-between">
+                  <div className="col-7">
+                    <div className="damac-logo text-start">
+                      <Link href="/">
+                        <a className="damac-home-link">
+                            <Image src={ navbarLogo } width={139} height={15}/>
+                        </a>
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="col-5">
+                    <div className="d-flex justify-content-end">
+                      <div className="menuicon-wrapper">
+                        <a href="#" className="mainmenutoggle" onClick={handleMenuToggle}></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           }
 
-          { isDesktopOrLaptop && 
+          { isDesktopOrLaptopWidth && 
+            <div className="container">
+              
+              <div className="row">
+                
             
-                  <div className="container">
+                <div className="col-6 col-md-4 header-left-col align-items-center">
+                  <div className="menuicon-wrapper">
+                    <a href="#" className="mainmenutoggle" onClick={handleMenuToggle}>Menu</a>
+                  </div>
+
+                  <div className="damac-logo">
+                    <Link href="/">
+                      <a className="damac-home-link">
+                          <Image src={ navbarLogo } width={139} height={15}/>
+                      </a>
+                    </Link>
                     
-                    <div className="row">
-                      
+                  </div>
+
+                </div>
+
+                <div className="col-6 col-md-8 header-right-col">
                   
-                      <div className="col-6 col-md-4 header-left-col align-items-center">
-                        <div className="menuicon-wrapper">
-                          <a href="#" className="mainmenutoggle" onClick={handleMenuToggle}>Menu</a>
-                        </div>
+                  <div className="header-right-area d-flex justify-content-end">
+                    <div className="header-item-wrapper">
+                      <a href="#" className="browseProperties">Browse Properties</a>
+                    </div>
 
-                        <div className="damac-logo">
-                          <a href="#" className="damac-home-link">
-                              <Image src={ navbarLogo } width={139} height={15}/>
-                          </a>
-                        </div>
+                    <div className="header-item-wrapper">
+                      <a href="#" className="btn btn-primary">Enquire</a>
+                    </div>
 
-                      </div>
+                    <div className="header-item-wrapper">
 
-                      <div className="col-6 col-md-8 header-right-col">
-                        
-                        <div className="header-right-area d-flex justify-content-end">
-                          <div className="header-item-wrapper">
-                            <a href="#" className="browseProperties">Browse Properties</a>
-                          </div>
-
-                          <div className="header-item-wrapper">
-                            <a href="#" className="btn btn-primary">Enquire</a>
-                          </div>
-
-                          <div className="header-item-wrapper">
-
-                            <div className="dropdown dropdown-item-outer language-dropdown">
-                              <a href="#" className="dropdown-toggle"><span>English</span></a>
-                              <ul className="dropdown-menu">
-                                <li className="selected"><a className="dropdown-item" href="#">English</a></li>
-                                <li className=""><a className="dropdown-item" href="#">French</a></li>
-                                <li className=""><a className="dropdown-item" href="#">Espanol</a></li>
-                              </ul>
-                            </div>
-
-                          </div>
-
-                          <div className="header-item-wrapper d-flex align-items-center">
-                            {/*
-                            <a href="#" className="bookmark-icon">
-                              <span>bookmark icon</span>
-                            </a>
-                            */}
-
-                            <a href="#" className="bookmark-btn">
-                              <span>
-                                <FontAwesomeIcon icon={ faBookmark }/>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-
+                      <div className="dropdown dropdown-item-outer language-dropdown">
+                        <a href="#" className="dropdown-toggle"><span>English</span></a>
+                        <ul className="dropdown-menu">
+                          <li className="selected"><a className="dropdown-item" href="#">English</a></li>
+                          <li className=""><a className="dropdown-item" href="#">French</a></li>
+                          <li className=""><a className="dropdown-item" href="#">Espanol</a></li>
+                        </ul>
                       </div>
 
                     </div>
 
+                    <div className="header-item-wrapper d-flex align-items-center">
+                      {/*
+                      <a href="#" className="bookmark-icon">
+                        <span>bookmark icon</span>
+                      </a>
+                      */}
+
+                      <a href="#" className="bookmark-btn">
+                        <span>
+                          <FontAwesomeIcon icon={ faBookmark }/>
+                        </span>
+                      </a>
+                    </div>
                   </div>
 
+                </div>
+
+              </div>
+
+            </div>
           }
 
 

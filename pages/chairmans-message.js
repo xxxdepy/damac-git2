@@ -21,7 +21,9 @@ function ChairmansMessage() {
 
       <Head>
         <title>Damac - Chairman's Message</title>
+        
         <meta name="description" content="Chairman's Message - Damac Properties" />
+        
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

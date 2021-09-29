@@ -26,6 +26,7 @@ function News() {
       <Head>
         <title>Damac - News</title>
         <meta name="description" content="News - Damac Properties" />
+        
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

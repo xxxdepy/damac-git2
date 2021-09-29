@@ -22,6 +22,7 @@ function ContactUs() {
       <Head>
         <title>Damac - Contact Us</title>
         <meta name="description" content="Contact Us - Damac Properties" />
+        
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

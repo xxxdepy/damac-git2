@@ -26,6 +26,7 @@ function WhyDubai() {
       <Head>
         <title>Damac - Why Dubai</title>
         <meta name="description" content="Why Dubai - Damac Properties" />
+        
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -196,13 +197,13 @@ function WhyDubai() {
                    <div className={`sliderArrows sliderArrowsDark`}>
                      <a href="#" className="sliderArrow">
                        <span><svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path  d="M8.75 15.875L1.875 9L8.75 2.125" stroke="white" strokeWidth="3" strokeLinecap="round" stroke-linejoin="round"/>
+                        <path  d="M8.75 15.875L1.875 9L8.75 2.125" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
                         </span>
                      </a>
                      <a href="#" className="sliderArrow">
                        <span><svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path  d="M2.25 2.125L9.125 9L2.25 15.875" stroke="white" strokeWidth="3" strokeLinecap="round" stroke-linejoin="round"/>
+                        <path  d="M2.25 2.125L9.125 9L2.25 15.875" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
 
                         </span>
@@ -270,13 +271,13 @@ function WhyDubai() {
                  <div className={`sliderArrows sliderArrowsDark`}>
                    <a href="#" className="sliderArrow">
                      <span><svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path  d="M8.75 15.875L1.875 9L8.75 2.125" stroke="white" strokeLidth="3" strokeLinecap="round" stroke-linejoin="round"/>
+                      <path  d="M8.75 15.875L1.875 9L8.75 2.125" stroke="white" strokeLidth="3" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                       </span>
                    </a>
                    <a href="#" className="sliderArrow">
                      <span><svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path  d="M2.25 2.125L9.125 9L2.25 15.875" stroke="white" strokeLidth="3" strokeLinecap="round" stroke-linejoin="round"/>
+                      <path  d="M2.25 2.125L9.125 9L2.25 15.875" stroke="white" strokeLidth="3" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
 
                       </span>

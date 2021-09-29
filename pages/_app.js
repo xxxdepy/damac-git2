@@ -1,3 +1,6 @@
+// pages/_app.js
+import Head from 'next/head'
+
 import '../styles/bootstrap/bootstrap.css'
 import '../styles/globals.css'
 import '../styles/pagestyles.css'
@@ -13,6 +16,9 @@ config.autoAddCss = false
 
 
 function MyApp({ Component, pageProps }) {
+  <Head>
+    <meta name="viewport" content="viewport-fit=cover" />
+  </Head>
   return <Component {...pageProps} />
 }
 

@@ -18,7 +18,7 @@ import React, { Component } from "react";
 
 import TextSection from '../../components/text-section'
 
-import styles from './BlogDetail.module.css'
+import styles from '../../styles/BlogDetail.module.css'
 
 
 // FA
@@ -91,9 +91,7 @@ function BlogPost() {
 
       </main>
 
-      <Footer>
-      
-      </Footer>
+      <Footer></Footer>
 
       
     </div>

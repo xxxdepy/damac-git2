@@ -26,6 +26,7 @@ function Blog() {
       <Head>
         <title>Damac - News</title>
         <meta name="description" content="Blog - Damac Properties" />
+        
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

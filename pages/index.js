@@ -19,13 +19,15 @@ export default function Home() {
 
   const isDesktopOrLaptop = useMediaQuery(
        { minDeviceWidth: 768 },
-       // { deviceWidth: 768 } // `device` prop
+       // { deviceWidth: 769 } // `device` prop
   );
 
-  const isMobile = useMediaQuery(
+  const isMobileWidth = useMediaQuery(
        { maxDeviceWidth: 767 },
        // { deviceWidth: 767 } // `device` prop
   );
+
+
 
 
   return (
@@ -34,6 +36,7 @@ export default function Home() {
       <Head>
         <title>Damac - Home</title>
         <meta name="description" content="Damac Properties" />
+        
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -47,7 +50,7 @@ export default function Home() {
             <HomeBanner bannerImage={ `/images/hero-image-sm.png` }></HomeBanner>
           }
 
-          { isMobile &&
+          { !isDesktopOrLaptop &&
             <div className="homeMobileBanner">
               <div className="container">
                 
