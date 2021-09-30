@@ -1,3 +1,6 @@
+
+import React, { Component, useState, useEffect } from "react";
+
 import Head from 'next/head'
 import Image from 'next/image'
 
@@ -10,7 +13,6 @@ import AboutBanner from '../components/AboutBanner'
 import Footer from '../components/Footer'
 
 
-import React, { Component } from "react";
 import Slider from "react-slick";
 
 
@@ -28,12 +30,29 @@ const sliderSettings = {
  // React Responsive
  import { Context as ResponsiveContext } from 'react-responsive'
  import { useMediaQuery } from 'react-responsive'
+ import { BrowserView, MobileView, isBrowser, isMobile, getUA, getSelectorsByUserAgent } from 'react-device-detect';
 
 
 
 // import styles from '../styles/.module.css'
 
+
+
+// Banner image
+
+// Static import
+import aboutBanner from '../public/images/about-bg.png'
+
+
 function About() {
+
+
+  const [deviceIsMobile, setDeviceIsMobile] = useState(false);
+  useEffect(() => {
+      if ( isMobile ) {
+        setDeviceIsMobile( true );
+      }
+   }, [])
 
   // 
 
@@ -64,7 +83,7 @@ function About() {
       <main className="main about-main">
        
 
-       <AboutBanner bannerImage={ `/images/about-bg.png` }></AboutBanner>
+       <AboutBanner bannerImage={ aboutBanner }></AboutBanner>
 
 
        <div className="damac-text-section-container">

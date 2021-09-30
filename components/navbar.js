@@ -40,12 +40,13 @@ export default function Navbar({ className, children, navbarStyle }) {
 
 
 
-  // 
-
-  let ssrDeviceWidth = 769;
-  if ( isMobile ) {
-    ssrDeviceWidth = 767;
-  }
+  // Device React
+  const [deviceIsMobile, setDeviceIsMobile] = useState(false);
+  useEffect(() => {
+      if ( isMobile ) {
+        setDeviceIsMobile( true );
+      }
+   }, [])
 
   const isDesktopOrLaptopWidth = useMediaQuery(
        // { query: '(min-width: 768px)' }
@@ -57,6 +58,8 @@ export default function Navbar({ className, children, navbarStyle }) {
        { maxDeviceWidth: 767 }, 
        // { deviceWidth: ssrDeviceWidth }
   );
+
+
 
 
 
@@ -76,7 +79,7 @@ export default function Navbar({ className, children, navbarStyle }) {
     <header className={`damac-header damac-nav  ${className} ${ slideOutMenuVisible ? 'slideout-active' : 'slideout-not-active'} `}>
           
 
-          { !isDesktopOrLaptopWidth && 
+          { (deviceIsMobile) && 
             <div className={ `mobileNavContainer` }>
               <div className="container">
                 <div className="row justify-content-between">
@@ -101,13 +104,13 @@ export default function Navbar({ className, children, navbarStyle }) {
             </div>
           }
 
-          { isDesktopOrLaptopWidth && 
+          { (!deviceIsMobile) && 
             <div className="container">
               
               <div className="row">
                 
             
-                <div className="col-6 col-md-4 header-left-col align-items-center">
+                <div className="col-7 col-md-4 header-left-col align-items-center">
                   <div className="menuicon-wrapper">
                     <a href="#" className="mainmenutoggle" onClick={handleMenuToggle}>Menu</a>
                   </div>
@@ -123,18 +126,18 @@ export default function Navbar({ className, children, navbarStyle }) {
 
                 </div>
 
-                <div className="col-6 col-md-8 header-right-col">
+                <div className="col-5 col-md-8 header-right-col">
                   
                   <div className="header-right-area d-flex justify-content-end">
-                    <div className="header-item-wrapper">
+                    <div className="header-item-wrapper not-on-mobile">
                       <a href="#" className="browseProperties">Browse Properties</a>
                     </div>
 
-                    <div className="header-item-wrapper">
+                    <div className="header-item-wrapper not-on-mobile">
                       <a href="#" className="btn btn-primary">Enquire</a>
                     </div>
 
-                    <div className="header-item-wrapper">
+                    <div className="header-item-wrapper not-on-mobile">
 
                       <div className="dropdown dropdown-item-outer language-dropdown">
                         <a href="#" className="dropdown-toggle"><span>English</span></a>

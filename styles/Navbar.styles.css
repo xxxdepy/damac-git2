@@ -199,6 +199,12 @@ header.damac-header.slideout-active .mobileNavContainer {
 }
 
 
+.slideout-active .menuicon-wrapper > a {
+    background-image: url(/images/icons/hamburger-menu-close-white.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 @media ( max-width: 767px ) {
     .main-menu-slideout .biglinks {
         padding: 0 0px;
@@ -225,9 +231,12 @@ header.damac-header.slideout-active .mobileNavContainer {
         padding-right: 0;
     }
 
-    .slideout-active .menuicon-wrapper > a {
-        background-image: url(/images/icons/hamburger-menu-close-white.svg);
-        background-size: contain;
-        background-repeat: no-repeat;
+    
+
+
+    .header-left-col .menuicon-wrapper {
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
     }
 }

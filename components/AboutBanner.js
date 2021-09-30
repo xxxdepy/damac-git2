@@ -1,17 +1,19 @@
-
-import React, { useState } from "react";
 import Image from 'next/image'
 import Link from 'next/link'
 
 import styles from '../styles/HomeBanner.module.css'
 
 
+
+
 export default function AboutBanner( { bannerImage, children} ) {
-  
+
+
   const banner = (
     <Image 
     className={styles['bg-image']}
     src={bannerImage} width={1920} 
+    placeholder="blur"
     height={1080}
     layout="fill"
     >

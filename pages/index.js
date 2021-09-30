@@ -1,9 +1,14 @@
+// React
+import React, { useState, useEffect } from "react";
 import Head from 'next/head'
 import Image from 'next/image'
+
+
 
 // Navbar
 import Navbar from '../components/navbar'
 import HomeBanner from '../components/HomeBanner'
+import CookieConsent from '../components/CookieConsent'
 
 import styles from '../styles/Home.module.css'
 
@@ -13,9 +18,27 @@ import styles from '../styles/Home.module.css'
 // React Responsive
 import { Context as ResponsiveContext } from 'react-responsive'
 import { useMediaQuery } from 'react-responsive'
+import { BrowserView, MobileView, isBrowser, isMobile, getUA, getSelectorsByUserAgent } from 'react-device-detect';
+
+
+
+
+
+// Static imports
+import bannerImage from '../public/images/hero-image-sm.png'
+
+
+
 
 export default function Home() {
   // 
+
+  const [deviceIsMobile, setDeviceIsMobile] = useState(false);
+  useEffect(() => {
+      if ( isMobile ) {
+        setDeviceIsMobile( true );
+      }
+   }, [])
 
   const isDesktopOrLaptop = useMediaQuery(
        { minDeviceWidth: 768 },
@@ -26,6 +49,11 @@ export default function Home() {
        { maxDeviceWidth: 767 },
        // { deviceWidth: 767 } // `device` prop
   );
+
+  
+  
+
+
 
 
 
@@ -46,49 +74,38 @@ export default function Home() {
 
       <main className="main home-main">
 
-          { isDesktopOrLaptop &&
-            <HomeBanner bannerImage={ `/images/hero-image-sm.png` }></HomeBanner>
-          }
+          <>
+            { (!deviceIsMobile) &&
+              <HomeBanner bannerImage={ bannerImage }></HomeBanner>
+            }
 
-          { !isDesktopOrLaptop &&
-            <div className="homeMobileBanner">
-              <div className="container">
-                
-                <div className="homemobileBannerText">
-                  <h3>Golf Town at DAMAC Hills</h3>
-                  <p>Your second home around the World</p>
-                </div>
+            { (deviceIsMobile) &&
+              <div className="homeMobileBanner">
+                <div className="container">
+                  
+                  <div className="homemobileBannerText">
+                    <h3>Golf Town at DAMAC Hills</h3>
+                    <p>Your second home around the World</p>
+                  </div>
 
-                <div className="bannerBtnGroup">
-                  <a className="d-block btn btn-primary cta-btn">
-                    <span>Discover more</span>
-                  </a>
+                  <div className="bannerBtnGroup">
+                    <a className="d-block btn btn-primary cta-btn">
+                      <span>Discover more</span>
+                    </a>
 
-                  <a className="d-block btn cta-btn cta-btn-link">
-                    <span>Explore Now</span>
-                  </a>
-                </div>
+                    <a className="d-block btn cta-btn cta-btn-link">
+                      <span>Explore Now</span>
+                    </a>
+                  </div>
 
-              </div>
-            </div>
-          }
-
-
-
-
-          <div className="cookie-consent-bar">
-            <div className="container">
-              <div className="row align-items-center justify-content-between">
-                <div className="col-8">
-                  <p>We are using cookies to give you the best experience on our website. You can find out more about which cookies we are using by reading our Cookie policy - Privacy Policy</p>
-                </div>
-                <div className="col-4 col-md-4 text-end">
-                  <a href="#" className="btn btn-primary">Accept</a>
                 </div>
               </div>
-            </div>
-          </div>
+            }
+          </>
 
+
+
+          <CookieConsent/>
           
         
       </main>
@@ -96,4 +113,11 @@ export default function Home() {
       
     </div>
   )
+}
+
+
+export async function getStaticProps(context) {
+  return {
+    props: {}, // will be passed to the page component as props
+  }
 }

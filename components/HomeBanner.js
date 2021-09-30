@@ -13,6 +13,7 @@ export default function HomeBanner( { bannerImage, children} ) {
     className={styles['bg-image']}
     src={bannerImage} width={567} 
     height={320}
+    placeholder="blur"
     layout="fill"
     >
       
