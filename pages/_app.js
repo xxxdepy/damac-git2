@@ -2,6 +2,7 @@
 import Head from 'next/head'
 
 import '../styles/bootstrap/bootstrap.css'
+import '../styles/Bootstrap.styles.css'
 import '../styles/globals.css'
 import '../styles/pagestyles.css'
 

@@ -115,11 +115,19 @@
     line-height: 2;
 }
 
+
+.about-banner-top-area {
+    margin-bottom: 100px;
+}
+
 @media ( max-width: 768px ) {
+    .about-banner-top-area {
+        margin-bottom: 45px;
+    }
 
    .about-banner-container {
      display: flex;
-     align-items: flex-end;
+     align-items: center;
      height: 100%;
    }
 
@@ -132,6 +140,7 @@
   .about-banner-text p {
     font-size: 16px;
     margin-top: 156px;
+    margin-top: 45px;
   }
 
   .about-banner-text .bannerPlayBtn {

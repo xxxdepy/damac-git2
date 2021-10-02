@@ -57,7 +57,7 @@ function Blog() {
                <div className="damac-latest-news">
                  <div className="sidebar-title">
                    <h3>Latest</h3>
-                   <hr/>              
+                  
                  </div>
                  <div className="news">
                    <label>Curated</label>
@@ -97,7 +97,7 @@ function Blog() {
                 <h2>DAMAC in the News</h2>
               </div>
               <div>
-                <a href="#" className="border-btn btn">View all</a>
+                <a href="#" className="border-btn border-btn-dark btn">View all</a>
               </div>
             </div>
            

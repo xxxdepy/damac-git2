@@ -17,6 +17,7 @@ import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detec
 import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-regular-svg-icons'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 
 export default function Navbar({ className, children, navbarStyle }) {
@@ -174,19 +175,34 @@ export default function Navbar({ className, children, navbarStyle }) {
 
 
           <div className={`main-menu-slideout ${ slideOutMenuVisible ? 'active' : 'not-active'}`}>
+            <div className="menuslideut-left" onClick={handleMenuToggle}>
+              <div className="coverArea"></div>
+            </div>
             <div className="inner">
               
               <div className="main-menu-inner d-flex flex-column justify-content-between">
                 <div className="biglinks">
-                  <ActiveLink href="/browse-properties" activeClassName="active">
-                       <a>Browse Properties</a>
-                  </ActiveLink>
-                  <ActiveLink href="/about" activeClassName="active">
-                       <a>About</a>
-                  </ActiveLink>
-                  <ActiveLink href="/contact" activeClassName="active">
-                       <a>Contact</a>
-                  </ActiveLink>
+                  <div className="biglink-container biglinks-dropdown">
+                    <ActiveLink href="/browse-properties" activeClassName="active">
+                         <a className="biglink">
+                             <span>Browse Properties</span>
+                             <span className="menuItemIcon">
+                               <FontAwesomeIcon icon={ faChevronDown } size="xs"/>
+                             </span>
+                         </a>
+                    </ActiveLink>
+                  </div>
+                  <div className="biglink-container">
+                    <ActiveLink href="/about" activeClassName="active">
+                         <a className="biglink"><span>About</span></a>
+                    </ActiveLink>
+                  </div>
+                  <div className="biglink-container">
+                    <ActiveLink href="/contact" activeClassName="active">
+                         <a className="biglink"><span>Contact Us</span></a>
+                    </ActiveLink>
+                  </div>
+                  
                 </div>
 
                 <div className="menulinks-cols">
@@ -210,17 +226,17 @@ export default function Navbar({ className, children, navbarStyle }) {
                             </Link>
                           </li>
                           <li>
-                            <Link href="/rent">
+                            <Link href="#">
                               <a>Rent</a>
                             </Link>
                           </li>
                           <li>
                             <Link href="/blog">
-                              <a>Rent</a>
+                              <a>Blog</a>
                             </Link>
                           </li>
                           <li>
-                            <Link href="/faqs">
+                            <Link href="#">
                               <a>FAQs</a>
                             </Link>
                           </li>
@@ -229,7 +245,11 @@ export default function Navbar({ className, children, navbarStyle }) {
 
                       <div className="col-md-4 menu-list-col">
                         <ul className="menu-list">
-                          <li><a href="#">Career</a></li>
+                          <li>
+                              <Link href="/career">
+                                <a >Career</a>
+                              </Link>
+                          </li>
                           <li><a href="#">Hotels and Resorts</a></li>
                           <li><a href="#">Sitemap</a></li>
                           <li><a href="#">Terms and Conditions</a></li>
@@ -244,7 +264,12 @@ export default function Navbar({ className, children, navbarStyle }) {
                           <li><a href="#">Mortgage Calculator</a></li>
                           <li><a href="#">Customer Login</a></li>
                           <li><a href="#">Cookie Policy</a></li>
-                          <li><a href="#">Building Documentation</a></li>
+                          <li>
+                            <Link href="/building-documentation">
+                              <a>Building Documentation</a>
+                            </Link>
+                            
+                          </li>
                           
                         </ul>
                       </div>

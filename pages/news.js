@@ -43,7 +43,7 @@ function News() {
        <section className="damac-new-sec">
            <div className="container">
              <div className="row">
-               <div className="col-md-9">
+               <div className="col-md-8">
                <div className="primary-cta">
                  <img src="/images/newscover.png" className="img-responsive full-width"/>
                  <label>Press Release</label>
@@ -53,11 +53,11 @@ function News() {
                  <p> 21/12 2020 by The Guardian </p>
                </div>
              </div>
-             <div className="col-md-3">
+             <div className="col-md-4">
                <div className="damac-latest-news">
                  <div className="sidebar-title">
                    <h3>Latest</h3>
-                   <hr/>              
+                              
                  </div>
                  <div className="news">
                    <label>Curated</label>
@@ -231,7 +231,7 @@ function News() {
           </div>
 
           <div className="row">
-            <div className="col-md-9">            
+            <div className="col-md-8">            
               <div className="press-release">
                 <img src="/images/news/Rectangle 146.png" className="img-fluid full-width" />
                 <span className="tag-label">Tag Label</span>
@@ -239,12 +239,12 @@ function News() {
                 <p>December 30 • Lin Manuel</p>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-4">
               
               <div className="damac-latest-news">
                 <div className="sidebar-title">
                 <h3>Latest</h3>
-                <hr/>              
+                          
               </div>
               <div className="news">
                 <span className='tag-label'>Tag</span>

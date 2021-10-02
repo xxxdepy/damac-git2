@@ -134,11 +134,13 @@ header.damac-header.slideout-active .mobileNavContainer {
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: var(--primary);
-    background-image: var(--primary-gradient);
-    min-width: 76vw;
+    background-color: transparent;
+    /*background-color: var(--primary);
+    background-image: var(--primary-gradient);*/
+    min-width: 100%;
     transform: translateX(120%);
     transition: 0.5s all ease-in-out;
+    max-width: 100%;
 }
 
 .main-menu-slideout.active {
@@ -153,6 +155,8 @@ header.damac-header.slideout-active .mobileNavContainer {
 .main-menu-slideout > .inner {
     padding: 45px;
     height: 100%;
+    background-color: var(--primary);
+    background-image: var(--primary-gradient);
 }
 
 .main-menu-slideout .main-menu-inner {
@@ -172,6 +176,23 @@ header.damac-header.slideout-active .mobileNavContainer {
 .main-menu-slideout .biglinks a:hover, 
 .main-menu-slideout .biglinks a.active {
     opacity: 1;
+}
+
+
+.main-menu-slideout .biglinks a.biglink {
+    display: inline-flex;
+    align-items: center;
+}
+span.menuItemIcon {
+    font-size: 0.55em;
+    margin-left: 20px;
+    display: block;
+    margin-top: 10px;
+}
+
+.damac-header .language-dropdown {
+    position: relative;
+    z-index: 99;
 }
 
 
@@ -198,12 +219,20 @@ header.damac-header.slideout-active .mobileNavContainer {
     opacity: 1;
 }
 
-
+.slideout-active .menuicon-wrapper {
+    position: relative;
+    z-index: 101;
+}
 .slideout-active .menuicon-wrapper > a {
-    background-image: url(/images/icons/hamburger-menu-close-white.svg);
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.9' fill-rule='evenodd' clip-rule='evenodd' d='M8.39526 10.7068L0.101603 19.0005L1.51423 20.4131L9.80789 12.1195L18.4863 20.7979L19.899 19.3853L11.2205 10.7068L19.899 2.02835L18.4864 0.615723L9.8079 9.2942L1.5142 1.0005L0.101562 2.41314L8.39526 10.7068Z' fill='white'/%3E%3C/svg%3E%0A");
     background-size: contain;
     background-repeat: no-repeat;
 }
+/*.slideout-active.navbar-dark .menuicon-wrapper > a {
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.9' fill-rule='evenodd' clip-rule='evenodd' d='M8.39526 10.7068L0.101603 19.0005L1.51423 20.4131L9.80789 12.1195L18.4863 20.7979L19.899 19.3853L11.2205 10.7068L19.899 2.02835L18.4864 0.615723L9.8079 9.2942L1.5142 1.0005L0.101562 2.41314L8.39526 10.7068Z' fill='black'/%3E%3C/svg%3E%0A");
+    background-size: contain;
+    background-repeat: no-repeat;
+}*/
 
 @media ( max-width: 767px ) {
     .main-menu-slideout .biglinks {
@@ -239,4 +268,33 @@ header.damac-header.slideout-active .mobileNavContainer {
         display: flex;
         align-items: center;
     }
+}
+
+
+
+@media ( min-width: 768px ) {
+    .main-menu-slideout .inner {
+       margin-left: 30vw;
+    }
+
+    .main-menu-slideout .menuslideut-left {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background-image: url(/images/bigmenu-left.jpg);
+        width: 31vw;
+        opacity: 0;
+        transition: 0.2s all ease-in-out;
+        background-size: cover;
+        background-repeat: no-repeat;
+   }
+
+   .slideout-active .main-menu-slideout .menuslideut-left {
+       opacity: 1;
+   }
+
+   .slideout-active .damac-logo {
+       z-index: 101;
+   }
 }
