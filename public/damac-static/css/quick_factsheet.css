@@ -1,0 +1,216 @@
+p{
+	margin: 0;
+}
+a:hover{
+	color: inherit;
+}
+/*more link section css start here*/
+.more-wrap {
+    background: #000000;
+    padding-top: 82px;
+    padding-bottom: 142px;
+}
+.more-head h1 {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+}
+ul.capital-dm-ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    gap: 30px;
+    margin-bottom: 47px;
+}
+.dfm-main-text {
+    padding-bottom: 15px;
+}
+
+.dfm-table-main.table-responsive {
+    padding-right: 30px;
+}
+
+
+
+ul.capital-dm-ul li a {   
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    opacity: 50%;   
+}
+
+ul.capital-dm-ul li.active a {
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: #000 !important;
+    border-bottom: 2px solid;
+    padding-bottom: 8px;
+    opacity: 1;
+}
+.graph-images {
+    text-align: center;
+    margin-bottom: 114px;
+}
+ul.more-link-ul {
+    list-style-type: none;
+    padding: 0;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 55px;
+}
+ul.more-link-ul li {
+    width: 20.42vw;
+    padding-bottom: 45px;
+}
+ul.more-link-ul li a {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+ul.more-link-ul li a i {
+    margin-left: 15px;
+}
+/*more link section css end here*/
+.factsheet-hero{
+	padding-top: 115px;
+}
+.breadcrum-main{
+	color: #000000;
+}
+.breadcrum-main ul li a{
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+	letter-spacing: 0.02em;	
+	opacity: 50%;
+}
+.breadcrum-main ul li span {
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 16px;
+    opacity: 50%;
+}
+.breadcrum-main ul {
+    margin-bottom: 0px;
+}
+.factsheet-main-head .head-text h1{	
+	font-size: 42px;
+    line-height: 49px;
+    font-weight: 500;
+    margin-top: 14px;
+}
+.quick-factsheet-wrap{
+    padding-top: 68px;
+    padding-bottom: 12px;
+}
+.factsheet-main-content h1{
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 500;   
+    margin-bottom: 30px;
+    padding-right: 45px;
+}
+.factsheet-main-content p{
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    font-weight: 300;
+    opacity: 0.8;
+    margin-bottom: 30px;
+    padding-right: 45px; 
+}
+.factsheet-main-content.second-p p{
+    padding-right: 0px;
+    padding-left: 45px;
+}
+.graph-main-wrap img{
+    width: 100%;
+    object-fit: cover;
+    margin-top: 12px;
+}
+.demac-value-table table thead {
+    background: #D6D6D6;
+    border-radius: 4px;
+}
+.demac-value-table table tr td:last-child,.demac-value-table table tr th:last-child{
+    text-align: right;
+}
+.demac-value-table table thead tr th {
+    letter-spacing: 0.05em;
+    font-size: 16px;
+    opacity: 80%;
+    font-weight: 500;
+    line-height: 27px;
+    padding: 12px;
+    border-color: transparent !important;
+    vertical-align: top;
+}
+.demac-value-table .table-striped>tbody>tr:nth-of-type(even) {
+    --bs-table-accent-bg: var(--bs-table-striped-bg);
+    color: var(--bs-table-striped-color);
+    background: #F3F3F3 !important;
+}
+.demac-value-table table tbody tr td {
+    font-size: 16px;
+    font-weight: 300;
+    white-space: nowrap;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+    border-bottom-width: 0px;
+}
+.demac-value-table.financial.table-responsive{
+    margin-top: 10px;
+}
+.factsheet-graph-two{
+    margin-top: 123px;
+}
+.graph-table-main-wrap{
+    padding-top: 45px;
+    padding-bottom: 176px;
+}
+@media (max-width: 1024px){
+    .factsheet-main-content h1,.factsheet-main-content p{
+        padding-right: 0px;
+    }
+    .factsheet-main-content.second-p p{
+        padding-left: 0px;
+    }
+
+}
+@media (max-width: 767px){
+    .factsheet-main-head .head-text h1{
+            font-size: 32px;
+            line-height: 38px;
+    }
+    .factsheet-main-head{
+        flex-direction: column;
+    }
+    .quick-factsheet-wrap{
+        padding-top: 50px;
+    }
+    .graph-table-main-wrap{
+        padding-bottom: 50px;
+    }
+    .more-wrap{
+        padding: 50px 0;
+    }
+    ul.more-link-ul li {
+        width: 100%;
+        padding-bottom: 15px;
+    }
+}

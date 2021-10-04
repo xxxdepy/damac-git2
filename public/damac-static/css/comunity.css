@@ -1,0 +1,661 @@
+p{
+    margin-bottom: 0;
+}
+/*Comunity page css*/
+
+.comunity-left h1 {
+    font-family: Roboto;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 72px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.comunity-right ul li a {
+    background: rgba( 0, 0, 0, 0.35 );
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border-radius: 4px;    
+    padding: 12px;
+    margin-right: 15px;
+}
+.hero-container {
+    position: absolute;
+    bottom: 10px;
+    left: 104px;
+}
+
+.comunity-left span {
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.comunity-left a {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+section.comunity-hero {    
+    position: relative;
+    color: #fff;    
+}
+.hero-container {
+    position: absolute;
+    bottom: 10px;
+}
+.shape-content-wrap {
+    padding-left: 105px;
+    padding-top: 85px;
+    color: #000;
+}
+.shape-item h2 {   
+    font-size: 44px;   
+    font-weight: 500;
+    line-height: 52px; 
+    margin-bottom: 30px;
+}
+.shape-item p {  
+    font-size: 18px;   
+    line-height: 28px;
+    letter-spacing: 0.02em;    
+    opacity: 75%;
+}
+.shape-item {
+    padding-bottom: 75px;
+}
+.shape-item h4 {    
+    font-size: 32px;   
+    font-weight: 400;
+    line-height: 32px;   
+    margin-bottom: 8px;
+}
+ul.shape-count {
+    margin-top: 35px;
+    list-style-type: none;
+    padding: 0;
+    gap: 40px;
+}
+.shape-detail {
+    box-shadow: 0px 0px 12px 0px #0000001f;
+    padding: 18px 0;
+    position: relative;
+}
+.vs-range h5 {  
+    font-size: 22px;    
+    font-weight: 500;
+    line-height: 22px;    
+}
+.vs-range p {   
+    font-size: 16px;    
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    opacity: 80%;
+}
+.shape-plan h2 {    
+    font-size: 20px;    
+    font-weight: 400;
+    line-height: 20px;   
+}
+.shape-plan a {
+    color: #C0AA71;
+}
+.shape-plan a img {
+    padding-left: 8px;
+}
+.shape-plan {
+    border-left: 1px solid #cacaca;
+    padding-left: 12px;
+}
+.shape-contact ul {    
+    list-style-type: none;   
+}
+.solid-icon {
+    background: linear-gradient(90deg, rgba(192, 170, 113, 0) 0%, #C0AA71 0%, #C0AA71 0.01%, #F3E0AB 100%);
+    color: #fff;
+    padding: 14px;
+    border-radius: 4px;
+}
+.shape-image.float-end {
+    padding-top: 55px;
+}
+.shape-contact ul li {
+    margin-left: 8px;
+}
+a.border-icon {    
+    border: 2px solid #D0BB83;
+    padding: 12px;
+    border-radius: 4px;
+    color: #D0BB83;
+}
+.damac-gallery{
+    position: relative;
+}
+.damac-gallery img {
+    border-radius: 0px !important;
+}
+.gal-content {
+    width: 385px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 55px;
+    left: 116px;
+    color: #fff;
+}
+.gal-content p {
+    font-size: 20px;    
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.01em;    
+}
+.town-ship-detail {
+   background: linear-gradient(90deg, rgba(192, 170, 113, 0) 0%, #C0AA71 0%, #C0AA71 0.01%, #F3E0AB 100%);
+   padding-top: 76px;
+   padding-bottom: 53px;
+   color: #fff;
+}
+.town-ship-title h2 {    
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 52px;   
+    margin-bottom: 12px;
+}
+
+.town-ship-title p {    
+    font-size: 20px;    
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.01em;    
+    opacity: 70%;
+}
+.town-ship-title {
+    padding-bottom: 52px;
+}
+.town-card {
+    margin-bottom: 47px;
+}
+.town-card h6 {    
+    font-size: 32px;    
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 16px;
+    margin-bottom: 14px;
+}
+.town-card p {   
+    font-size: 20px;   
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: 0.02em;    
+    opacity: 80%;
+}
+.slider-nav {
+    margin-top: -22px;
+}
+.town-slider, 
+.town-slider img {
+    height: 100%;
+}
+.damac-light-title h2 {   
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 52px;   
+}
+.project-detail {
+    padding-top: 98px;
+    padding-bottom: 132px;
+}
+.vs-title-spacing{
+    padding-bottom: 44px;
+}
+.project-card {
+    margin-bottom: 47px;
+}
+.project-card h6 {    
+    font-size: 20px;    
+    font-weight: 500;
+    line-height: 34px;    
+    margin-top: 14px;
+    margin-bottom: 0;
+}
+.comm-location {
+    padding-top: 85px;
+    padding-bottom: 112px;
+    color: #000;
+}
+.location-content-wrap p {    
+    font-size: 18px;    
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.02em;    
+    opacity: 75%;
+}
+.brand-loc {
+    margin-top: 80px;
+}
+.brand-loc ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 33px;
+}
+.brand-loc ul li {
+    padding-right: 61px;
+}
+.master-plan {
+    color: #000;
+    padding-bottom: 82px;
+}
+.master-plan .damac-light-title {
+    margin-bottom: 52px;
+}
+.plan-image {
+    padding-bottom: 112px;
+}
+.plan-video {
+    position: relative;
+}
+img.play-button {
+    position: absolute;
+    top: calc(50% - 70px);
+    left: calc(50% - 61px);
+}
+section.destance {
+    background: linear-gradient(90deg, rgba(192, 170, 113, 0) 0%, #C0AA71 0%, #C0AA71 0.01%, #F3E0AB 100%);
+    padding-bottom: 81px;
+    padding-top: 67px;
+    color: #fff;
+}
+.distance-card h5 {    
+    font-size: 52px;    
+    font-weight: 300;
+    line-height: 59px;
+    letter-spacing: 0.01em;
+    margin-top: 16px; 
+    margin-bottom: 12px;
+}
+.why-invest {    
+    background-position: top;
+    background-repeat: no-repeat;
+    padding-top: 171px;
+    padding-bottom: 70px;
+    color: #fff;
+}
+
+.invest-wrap{
+    background: #000;
+    padding: 65px;
+    width: 50vw;
+}
+.invest-wrap h2 {
+    margin-bottom: 9px;    
+    font-size: 44px;    
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: 0.01em;
+    
+}
+
+.invest-wrap p {
+    margin-bottom: 84px;    
+    font-size: 22px;    
+    font-weight: 300;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+    
+}
+.invest-wrap a.read-more {   
+    font-size: 16px;    
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+   
+}
+section.other-community {
+    padding-top: 108px;
+    padding-bottom: 138px;
+    color: #000;
+}
+section.other-community .damac-light-title h2 {
+    margin-bottom: 34px;
+}
+.other-community-wrp img {
+    margin-bottom: 14px;
+}
+.other-community-wrp h5 {    
+    font-size: 20px;   
+    font-weight: 500;
+    line-height: 34px;   
+}
+.other-community-wrp span { 
+    font-size: 20px;  
+    font-weight: 500;
+    line-height: 34px;    
+    opacity: 80%;
+}
+section.faq-section {
+    background: #000;
+    color: #fff;
+}
+section.faq-section {
+    background: #000;
+    color: #fff;
+    padding-top: 60px;
+    padding-bottom: 199px;
+}
+.faq-icon h2 {   
+    font-size: 32px;    
+    font-weight: 500;
+    line-height: 44px;
+    margin-top: 8px;
+    margin-bottom: 60px;
+}
+section.faq-section div.accordion, 
+section.faq-section .accordion-item,
+section.faq-section div.accordion button {
+    background: transparent !important;
+    color: #fff;
+}
+section.faq-section .accordion-item>h2>button {    
+    font-size: 20px;   
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.03em;   
+}
+
+section.faq-section .accordion-body {
+    padding-top: 0;   
+    font-size: 20px;   
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    
+}
+
+section.faq-section button {
+    background: transparent;
+}
+
+section.estimate .container {
+    padding-top: 38px;
+    padding-bottom: 59px;
+}
+.estimate{
+    background: linear-gradient(90deg, rgba(192, 170, 113, 0) 0%, #C0AA71 0%, #C0AA71 0.01%, #F3E0AB 100%);
+}
+section.estimate {
+    color: white;
+}
+
+section.estimate .col-md-8 img {
+    width: 30px;
+    margin-bottom: 16px;
+}
+section.estimate .col-md-6 p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 149.6%;
+}
+
+.border-white {
+    padding: 15px 20px;
+    width: 50%;
+    margin-bottom: 22px;
+    border: 0.5px solid #FFFFFF;
+}
+.estimate-inner {
+    display: flex;
+    columns: 2;
+    gap: 20px;
+    align-items: center;
+}
+p.estimate-tagline {
+    margin-bottom: 47px;
+}
+.estimate-inner span {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 148%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    opacity: 50%;
+}
+.estimate-inner p {
+    font-size: 20px;
+}
+span.text-right {
+    float: right;
+}
+
+span.text-right i {
+    opacity: 100%;
+}
+span.text-right.dark {
+    opacity: 100%;
+}
+span.text-right.dark i {
+    margin-left: 20px;
+}
+.estimate-cost {
+    margin-top: 40px;
+}
+.estimate-cost h4 {
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 31px;
+}
+.estimate-cost ul {
+    list-style-type: none;
+    padding: 0;
+}
+.estimate-cost ul li {
+    margin-bottom: 26px;
+}
+.estimate-cost span.text-left {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.estimate-cost span{
+opacity: 0.7;
+}
+.estimate-cost ul li {
+    margin-bottom: 26px;
+    font-size: 26px;
+    float: right;
+    text-align: right;
+    width: 100%;
+}
+.estimate-cost span.text-left {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 300;
+    float: left;
+    width:50%
+}
+section.estimate .col-md-8 {
+    padding-right: 156px;
+}
+
+
+
+
+@media(max-width: 768px){
+    .hero-container {
+    left: 0px;
+}
+
+section.estimate .col-md-8 {
+    padding-right: calc(var(--bs-gutter-x) * .5);
+}
+.estimate-inner {
+    width: 100%;
+    flex-direction: column;
+}
+.border-white {
+    width: 100%;
+}
+
+.shape-content-wrap{
+    padding-left: 0;
+}
+.comunity-left h1 {   
+    font-size: 40px;  
+    line-height: 45px;   
+}
+.comunity-right ul li a {    
+    padding: 9px;
+    margin-right: 10px;
+    font-size: 13px;
+}
+.comunity-left span{
+    font-size: 18px;
+}
+.comunity-left a{
+    font-size: 14px;
+}
+.comunity-hero-image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.comunity-hero-image {
+    height: 100vh;
+}
+.comunity-right ul {
+    list-style-type: none;
+    padding: 0;
+    padding-top: 20px;
+}
+.shape-item h2 {
+    font-size: 33px;    
+    line-height: 33px;
+    margin-bottom: 20px;   
+}
+.shape-item {
+    padding-bottom: 20px;
+}
+.shape-item h4{
+    font-size: 24px;
+    line-height: 28px;
+}
+.shape-item p {
+    font-size: 16px;
+    }
+    ul.shape-count{
+        gap: 0;
+    }
+    .shape-image.float-end {
+        padding-top: 0;
+    }
+    .gal-content {
+        width: 35vw;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 55px;
+        left: 13px;
+        color: #fff;
+    }
+    .town-slider, .town-slider img {
+        height: 100%;
+        object-fit: cover;
+        object-position: left;
+    }
+    .invest-wrap{
+        width: 100%;
+    }
+}
+
+
+@media(max-width: 767px){
+    .gal-content {
+        position: unset;
+        width: 100%;
+        color: #000;
+        padding: 10px;
+    }
+    section.damac-gallery .d-flex {
+        display: block !important;
+    }
+    section.damac-gallery .left-side-gallery .d-flex {
+        display: flex !important;
+    }
+    .town-slider, .town-slider img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .invest-wrap p{
+        margin-bottom: 40px;
+        font-size: 16px;    
+        line-height: 28px;    
+    }
+    .invest-wrap p br{
+        display: none;
+    }
+    .invest-wrap h2 {
+        margin-bottom: 9px;
+        font-size: 31px;
+        letter-spacing: 0.01em;
+    }
+    .invest-wrap {       
+        padding: 20px;
+        width: 100%;
+    }
+    ul.shape-count {
+        gap: 40px;
+    }
+    ul.d-flex.shape-count p {
+        line-height: 20px;
+    }
+    .shape-plan {
+    border-left: none;
+    padding-left: 0px;
+}
+.project-detail {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.damac-light-title h2 {
+    font-size: 32px;    
+    line-height: 32px;
+}
+.brand-loc {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.comm-location {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #000;
+}
+.master-plan{
+    padding-bottom: 50px;
+}
+.town-ship-title p br{
+ display: none;
+}
+section.other-community {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+section.faq-section {    
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+}

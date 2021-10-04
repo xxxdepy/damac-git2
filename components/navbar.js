@@ -131,7 +131,7 @@ export default function Navbar({ className, children, navbarStyle }) {
                   
                   <div className="header-right-area d-flex justify-content-end">
                     <div className="header-item-wrapper not-on-mobile">
-                      <a href="#" className="browseProperties">Browse Properties</a>
+                      <a href="/damac-static/browse_properties.html" className="browseProperties">Browse Properties</a>
                     </div>
 
                     <div className="header-item-wrapper not-on-mobile">
@@ -183,7 +183,7 @@ export default function Navbar({ className, children, navbarStyle }) {
               <div className="main-menu-inner d-flex flex-column justify-content-between">
                 <div className="biglinks">
                   <div className="biglink-container biglinks-dropdown">
-                    <ActiveLink href="/browse-properties" activeClassName="active">
+                    <ActiveLink href="/damac-static/browse_properties.html" activeClassName="active">
                          <a className="biglink">
                              <span>Browse Properties</span>
                              <span className="menuItemIcon">
@@ -198,7 +198,7 @@ export default function Navbar({ className, children, navbarStyle }) {
                     </ActiveLink>
                   </div>
                   <div className="biglink-container">
-                    <ActiveLink href="/contact" activeClassName="active">
+                    <ActiveLink href="/damac-static/contact.html" activeClassName="active">
                          <a className="biglink"><span>Contact Us</span></a>
                     </ActiveLink>
                   </div>
@@ -261,7 +261,7 @@ export default function Navbar({ className, children, navbarStyle }) {
                       <div className="col-md-4 menu-list-col">
                         <ul className="menu-list">
                           <li><a href="#">Mortgage Assist</a></li>
-                          <li><a href="#">Mortgage Calculator</a></li>
+                          <li><a href="/damac-static/mortage_calculator.html">Mortgage Calculator</a></li>
                           <li><a href="#">Customer Login</a></li>
                           <li><a href="#">Cookie Policy</a></li>
                           <li>

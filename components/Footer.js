@@ -61,7 +61,7 @@ export default function HomeBanner( { children} ) {
              <div className="footer-link-list footer-main-link-list">
                <ul>
                    <li>
-                     <Link href="#">
+                     <Link href="/blog">
                        <a>Blog</a>
                      </Link>
                    </li>
@@ -80,20 +80,20 @@ export default function HomeBanner( { children} ) {
 
                    <li>
                      
-                     <Link href="#">
+                     <Link href="/damac-static/investor_relation.html">
                        <a>Investor Relations</a>
                      </Link>
                    </li>
 
                    <li>
                      
-                     <Link href="#">
+                     <Link href="/career">
                        <a>Careers</a>
                      </Link>
                    </li>
 
                    <li>
-                     <Link href="#">
+                     <Link href="/damac-static/contact.html">
                        <a>Contact Us</a>
                      </Link>
                    </li>
