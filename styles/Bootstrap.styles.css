@@ -1,0 +1,11 @@
+
+.btn-check:checked + .btn-primary:focus, 
+.btn-check:active + .btn-primary:focus, 
+.btn-primary:active:focus, .btn-primary.active:focus, 
+.show > .btn-primary.dropdown-toggle:focus,
+
+.btn-check:focus + .btn-primary, 
+.btn-primary:focus {
+    -webkit-box-shadow: 0 0 0 0rem rgb(49 132 253 / 0%);
+    box-shadow: 0 0 0 0rem rgb(49 132 253 / 0%);
+}

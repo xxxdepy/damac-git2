@@ -1,0 +1,134 @@
+p{
+	margin: 0px;
+}
+.saved-hero{
+	background: linear-gradient(90deg, rgba(192, 170, 113, 0) 0%, #C0AA71 0%, #C0AA71 0.01%, #F3E0AB 100%);
+}
+.saved-hero-text{
+	font-size: 44px;
+	font-weight: 500;
+	line-height: 50px;
+	padding: 131px 0;
+}
+.saved_properties_wrap{
+	padding-top: 44px;
+	padding-bottom: 246px;
+}
+.property-slider-wrap {
+    position: relative;
+}
+.project-card {
+    margin-bottom: 66px;
+}
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.bookmark_main li a i {
+   font-size: 20px;
+    margin-left: 30px;
+    margin-top: 21px;
+}
+.project-card h6 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 41px;
+    margin-top: 12px;
+    margin-bottom: 0;
+    letter-spacing: 0.02em;
+}
+.project-card p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.04em;
+    opacity: 65%;
+    margin-bottom: 12px;
+}
+ul.bedroom-detail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+    margin-bottom: 8px;
+}
+ul.bedroom-detail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+    margin-bottom: 8px;
+}
+ul.bedroom-detail li a img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+.shape-wrap-plan {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    margin-top: 20px;
+}
+.shape-contact ul {
+    list-style-type: none;
+}
+.shape-contact ul li {
+    margin-left: 8px;
+}
+.solid-icon {
+    background: linear-gradient( 
+90deg, rgba(192, 170, 113, 0) 0%, #C0AA71 0%, #C0AA71 0.01%, #F3E0AB 100%);
+    color: #fff;
+    padding: 14px;
+    border-radius: 4px;
+}
+a.border-icon {
+    border: 2px solid #D0BB83;
+    padding: 12px;
+    border-radius: 4px;
+    color: #D0BB83;
+}
+.project-detail-nav .left-nav {
+    position: absolute;
+    top: 25%;
+    left: 0px;
+}
+.project-detail-nav .right-nav {
+    position: absolute;
+    top: 25%;
+    right: 6px;
+}
+.project-detail-nav a {
+    display: block;
+    background: rgba( 0, 0, 0, 0.4 );
+    box-shadow: none;
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 50%;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 7px 15px;
+    margin-left: 7px;
+}
+.project-detail-nav a i {
+    color: #fff;
+}
+
+@media (max-width: 1024px){
+	ul.bedroom-detail li a {
+	    font-size: 15px;
+	}
+}
+@media (max-width: 767px){
+	.saved_properties_wrap{
+		padding-bottom: 50px;
+	}
+	.saved-hero-text{
+		font-size: 32px;
+	}
+}

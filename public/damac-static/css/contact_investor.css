@@ -1,0 +1,196 @@
+p{
+	margin: 0;
+}
+a:hover{
+	color: inherit;
+}
+/*more link section css start here*/
+.more-wrap {
+    background: #000000;
+    padding-top: 82px;
+    padding-bottom: 142px;
+}
+.more-head h1 {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+}
+ul.capital-dm-ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    gap: 30px;
+    margin-bottom: 47px;
+}
+.dfm-main-text {
+    padding-bottom: 15px;
+}
+
+.dfm-table-main.table-responsive {
+    padding-right: 30px;
+}
+
+
+
+ul.capital-dm-ul li a {   
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    opacity: 50%;   
+}
+
+ul.capital-dm-ul li.active a {
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: #000 !important;
+    border-bottom: 2px solid;
+    padding-bottom: 8px;
+    opacity: 1;
+}
+ul.more-link-ul {
+    list-style-type: none;
+    padding: 0;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 55px;
+}
+ul.more-link-ul li {
+    width: 20.42vw;
+    padding-bottom: 45px;
+}
+ul.more-link-ul li a {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+ul.more-link-ul li a i {
+    margin-left: 15px;
+}
+/*more link section css end here*/
+.cinvestor-hero{
+	padding-top: 115px;
+}
+.breadcrum-main{
+	color: #000000;
+}
+.breadcrum-main ul li a{
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+	letter-spacing: 0.02em;	
+	opacity: 50%;
+}
+.breadcrum-main ul li span {
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 16px;
+    opacity: 50%;
+}
+.breadcrum-main ul {
+    margin-bottom: 0px;
+}
+.cinvestor-main-head .head-text h1{	
+	font-size: 42px;
+    line-height: 49px;
+    font-weight: 500;
+    margin-top: 14px;
+}
+.cinvestor-wrap{
+	padding-top: 109px;
+	padding-bottom: 245px;
+}
+.cinvestor-contact-wrap h2{
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 500;
+	letter-spacing: 0.03em;
+	margin-bottom: 20px;
+}
+.cinvestor-contact-wrap p{
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+	margin-bottom: 12px;
+}
+.telephone-list li a{
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+	margin-bottom: 2px;
+}
+.telephone-list li a i{
+	margin-right: 10px;
+}
+.dm-col-4 {
+    padding: 0px;
+    padding: 0 19.5px;
+}
+.form-feild input, .form-feild select {
+    height: 48px;
+    margin-bottom: 16px;
+    background: #f5f5f5;
+    border: none;
+}
+.d-flex.align-items-center.phone-feild {
+    gap: 16px;
+}
+.main-label {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.32px;
+    font-weight: 500;
+    opacity: 40%;
+}
+.contact-form-btn {
+    background: #000;
+    display: block;
+    border-radius: 4px;
+    text-align: center;
+    color: #fff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 52px;
+}
+.contact-form-btn:hover{
+	color: #fff;
+}
+@media (max-width: 1024px){
+	.rq-md-4{
+		width: 33.333%;
+	}
+}
+@media (max-width: 767px){
+	.rq-md-4 {
+	    width: 100%;
+	}
+	.cinvestor-wrap{
+		padding: 50px 0;
+	}
+	.cinvestor-main-head .head-text h1{
+		font-size: 32px;
+	}
+	.more-wrap{
+		padding: 50px 0;
+	}
+	ul.more-link-ul li {
+	    width: 100%;
+	    padding-bottom: 15px;
+	}
+	.dm-col-4{
+		padding: 0 12px;
+	}
+}
