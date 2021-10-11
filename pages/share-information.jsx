@@ -42,7 +42,7 @@ import { faEnvelope, faArrowDown } from '@fortawesome/free-regular-svg-icons'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 
-function CapitalHistory( { mobileDevice } ) {
+function ShareInformation( { mobileDevice } ) {
 
 
   const [deviceIsMobile, setDeviceIsMobile] = useState(false);
@@ -61,8 +61,8 @@ function CapitalHistory( { mobileDevice } ) {
       },
 
       {
-        'label': 'Capital History',
-        'link': '/capital-history',
+        'label': 'Share Information',
+        'link': '/share-information',
         'active': true
       }
   ];
@@ -81,9 +81,9 @@ function CapitalHistory( { mobileDevice } ) {
     <div className='quickfactsheetbody'>
 
       <Head>
-        <title>Capital History - Damac</title>
+        <title>Share Information - Damac</title>
 
-        <meta name="description" content="Capital History - Damac Properties" />
+        <meta name="description" content="Share Information - Damac Properties" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -95,7 +95,7 @@ function CapitalHistory( { mobileDevice } ) {
         <Breadcrumbs crumbs={ crumbs }/>
 
         <HeadingTitle 
-          title="Capital History" 
+          title="Share Information" 
           btnLink={ downloadBtn } 
           deviceIsMobile={ deviceIsMobile }
           className='mb-0'
@@ -106,25 +106,48 @@ function CapitalHistory( { mobileDevice } ) {
         <div className='container'>
             <PageTabs tabLinks={ [
                 {
-                    url: '/dividends',
-                    label: 'Dividends',
+                    url: '/share-information',
+                    label: 'Share Graph Monitor',
+                    active: true,
+                },
+
+                {
+                    url: '/share-overview',
+                    label: 'Share Overview',
                     active: false,
                 },
 
                 {
-                    url: '/capital-history',
-                    label: 'Capital History',
-                    active: true,
-                }
+                    url: '/investment-calculator',
+                    label: 'Investment Calculator',
+                    active: false,
+                },
+
+
+                {
+                    url: '/share-price-lookup',
+                    label: 'Share Price Look Up',
+                    active: false,
+                },
+
+                {
+                    url: '/sharia-compliance',
+                    label: 'Sharia Compliance',
+                    active: false,
+                },
             ] }></PageTabs>
         </div>
 
         <section className='section'>
           <div className='container'>
 
-             <div className='table-wrapper-dividend my-4'>
-               <div className="table-main-wrap table-responsive">
-                 <table class="table table-striped dm-graph-table">
+
+             <div className="share-graph-content">
+               <div className="date-time">
+                 <p className=''><strong>Date & Time: 31 January 2021 11:31 (GTM +04:00)</strong></p>
+               </div>
+               <div className="share-graph-table-wrap table-responsive">
+                 <table className="table table-striped dm-graph-table">
                          <thead>
                            <tr>
                              <th>Share</th>
@@ -185,22 +208,25 @@ function CapitalHistory( { mobileDevice } ) {
                            </tr>                       
 
                          </tbody>
-                    </table>
-               </div>
-             </div>
-             
-
-             <div className='enquiry-form-section'>
-               <div className='row'>
-                 <div className='col-md-5'>
-                   <h2>Send us an enquiry</h2>
-                 </div>
-                 <div className='col-md-7'>
-                   <ContactForm initialValues={ {'gender': 'Mr'} }/>
-                 </div>
+                       </table>
                </div>
              </div>
 
+
+             <section className="graph-dm-main py-5">
+                 <div className="row">
+                   <div className="col-md-6">
+                     <div className="graph-left-div">
+                       <img src="/images/content/share-information/graph-left.jpg" alt="graph" className="img-fluid" />
+                     </div>
+                   </div>
+                   <div className="col-md-6">
+                     <div className="graph-right-div">
+                       <img src="/images/content/share-information/graph-right.jpg" alt="graph" className="img-fluid" />
+                     </div>
+                   </div>
+                 </div>
+             </section>
             
 
           </div>
@@ -217,7 +243,7 @@ function CapitalHistory( { mobileDevice } ) {
   )
 }
 
-export default CapitalHistory
+export default ShareInformation
 
 
 
