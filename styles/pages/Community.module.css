@@ -1,0 +1,80 @@
+
+/* Community banner */
+.community-banner {
+    display: block;
+    position: relative;
+    min-height: 660px;
+    height: 100vh;
+    height: calc(100vh - 85px);
+    background-color: #111;
+    background-image: linear-gradient(45deg, #111, #c8b37a);
+}
+
+.community-banner .bg-image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bottom-gradient {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 430px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+    z-index:  8;
+}
+
+
+
+/* banner text  */
+.community-banner  {
+    display: flex;
+    align-items: flex-end;
+}
+.community-banner-text {
+    position: relative;
+    z-index: 9;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    padding: 33px 0;
+
+    color: #fff;
+}
+
+
+.banner-text-left h1 {
+    font-size: 72px;
+}
+
+.banner-text-left p {
+    font-size: 22px;
+    margin-bottom: 36px;
+}
+
+
+.banner-text-left .location-community a {
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+    vertical-align: middle;
+    line-height: 1;
+}
+
+.banner-text-left .location-community a img {
+    margin-right: 15px;
+}
+
+.location-community .text-icon {
+    display: inline-block;
+    margin-right: 8px;
+}

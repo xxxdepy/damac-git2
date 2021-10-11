@@ -3,26 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-
-
-
-
 
 /* Common Style */
 :root {
@@ -33,6 +13,54 @@ a {
 
   --primary-gradient: linear-gradient(90deg, rgba(192, 170, 113, 0) 0%, #C0AA71 0%, #C0AA71 0.01%, #F3E0AB 100%);
 } 
+
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 300;
+  
+}
+
+a:hover {
+    color: var(--primary);
+}
+
+
+
+.dark a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.dark a:hover {
+    color: var(--primary);
+}
+
+
+
+
+
+
 
 
 .img-responsive {
@@ -70,6 +98,65 @@ a {
     }
 }
 
+
+
+/*Headings*/
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1, .h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+@media (min-width: 1200px) {
+  h1, .h1 {
+    font-size: 2.5rem;
+  }
+}
+
+h2, .h2 {
+  font-size: 32px;
+}
+@media (min-width: 1200px) {
+  h2, .h2 {
+    font-size: 42px;
+  }
+}
+
+h3, .h3 {
+  font-size: 32px;
+}
+@media (min-width: 1200px) {
+  h3, .h3 {
+    font-size: 28px;
+  }
+}
+
+h4, .h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+@media (min-width: 1200px) {
+  h4, .h4 {
+    font-size: 1.5rem;
+  }
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+}
+
+
+
+
+
 .cookie-consent-bar {
     position: fixed;
     bottom: 0;
@@ -106,12 +193,12 @@ a {
 
 a.btn-primary {
     background-color: var(--primary);
-    border: 0;
+    border-color: transparent;
     background-image: var(--primary-gradient);
 }
 a.btn-primary:hover {
     background-color: var(--primary);
-    border: 0;
+    border-color: transparent;
 }
 
 a.btn-primary.cta-btn {
@@ -130,6 +217,8 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 
@@ -141,6 +230,21 @@ p {
 .text-box p {
   font-weight: 300;
   font-size: 18px;
+}
+
+
+.heading-medium {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+@media ( min-width: 768px ) {
+
+    .heading-medium {
+        font-size: 44px;
+        margin-bottom: 20px;
+    }
+
 }
 
 @media ( max-width: 767px ) {

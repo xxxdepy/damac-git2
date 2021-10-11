@@ -16,6 +16,10 @@ header.damac-header:not(.damac-header-fixed) ~ .main {
     margin-top: -85px;
 }
 
+header.damac-header:not(.damac-header-fixed) ~ .main.main-regular {
+    margin-top: 0px;
+}
+
 header.damac-header.damac-header-fixed {
     position: fixed;
 }

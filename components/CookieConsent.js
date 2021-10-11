@@ -9,9 +9,23 @@ export default function CookieConsent() {
 
   const handleCookieAcceptance = (e) => {
     setCookieAccept(true);
+    localStorage.setItem('cookieAccepted', 'accepted');
     console.log('You accepted the cookie!');
   }
+
+ 
+
   const [cookieAccepted, setCookieAccept] = useState(false);
+
+  useEffect(() => {
+      
+       if ( localStorage.getItem('cookieAccepted') == 'accepted' ) {
+         setCookieAccept( true );
+       } else {
+           setCookieAccept( false );
+       }
+      
+   }, [])
   
   
 

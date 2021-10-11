@@ -1,0 +1,47 @@
+/*   */
+.pagetabs{
+    display: flex;
+    margin-bottom: 45px;
+}
+
+.pagetabs-link  {
+    padding: 15px 0;
+    display: block;
+    margin-right: 33px;
+    font-size: 18px;
+    position: relative;
+    opacity: 0.5;
+
+}
+
+.pagetabs-link:hover,
+.pagetabs-link.active {
+    color: #000;
+    opacity: 1;
+}
+
+.pagetabs-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #000;
+    opacity: 0;
+    transition: 0.12s all ease-in-out; 
+}
+
+.pagetabs-link:hover::after {
+    opacity: 0.8;
+}
+
+.pagetabs-link.active::after,
+.pagetabs-link:hover::after {
+    opacity: 1;
+}
+
+
+.pagetabs-link.active {
+    font-weight: 500;
+}
