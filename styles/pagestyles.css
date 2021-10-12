@@ -1,3 +1,87 @@
 /*
 * Styling for pages
 */
+
+
+
+/* Share overview  */
+.dfm-main-text {
+    padding-bottom: 15px;
+}
+
+.dfm-table-main.table-responsive {
+    padding-right: 30px;
+}
+
+/*demac dfm css*/
+.dfm-main-text p{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0.96px;
+    margin-bottom: 0;
+}
+.dfm-main-text h2{
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 0.80px;
+    font-weight: 300;
+    margin:0;
+    padding: 5px 0;
+}
+
+.dfm-row-table{
+    margin-top: 5px;
+}
+
+
+.dfm-table tbody tr td{
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0.80px;
+    border-bottom: 1px solid #eee;
+}
+.dfm-table tbody tr td strong{
+    font-weight: 500;
+}
+.dfm-success{
+    color: #56B378;
+}
+.data-provided-main p{
+    margin-top: 40px;
+    margin-bottom: 200px;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.80px;
+}
+
+@media (max-width: 767px){
+    ul.more-link-ul li{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .dfm-col-4{
+        padding: 0 12px;
+    }
+    .dfm-col-4:first-child{
+        padding-left: 12px;
+    }
+    .dfm-col-4:last-child{
+        padding-right: 12px;
+    }
+    .data-provided-main p{
+        margin-bottom: 50px;
+    }
+    ul.capital-dm-ul{
+        gap: 10px;
+    }
+    .dfm-table-main.table-responsive {
+        padding-right: 0px;
+    }
+    .share-main-head .share-head-text h1{
+        font-size: 30px;
+    }
+
+}
