@@ -61,8 +61,8 @@ export default function FooterMoreLinks({ items }) {
       },
 
       {
-        url: '/annual-reports',
-        label: 'Annual Reports'
+        url: '/annual-report',
+        label: 'Annual Report'
       },
 
       {

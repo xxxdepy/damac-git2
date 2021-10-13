@@ -1,0 +1,84 @@
+.pagetabs{
+    display: flex;
+    padding: 0;
+    margin-bottom: 45px;
+    list-style-type: none;
+}
+
+.pagetabs-link  {
+    padding: 15px 0;
+    display: block;
+    margin-right: 33px;
+    font-size: 18px;
+    position: relative;
+    opacity: 0.5;
+
+}
+
+.pagetabs-link:hover,
+.pagetabs-link.active {
+    color: #000;
+    opacity: 1;
+}
+
+.pagetabs-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #000;
+    opacity: 0;
+    transition: 0.12s all ease-in-out; 
+}
+
+.pagetabs-link:hover::after {
+    opacity: 0.8;
+}
+
+.pagetabs-link.active::after,
+.pagetabs-link:hover::after {
+    opacity: 1;
+}
+
+
+.pagetabs-link.active {
+    font-weight: 500;
+}
+
+
+/* Annual Report  */
+.annual-reports-list {
+    padding-bottom: 80px;
+}
+.annual-reports-item {
+    padding: 16px 0;
+    border-bottom: 1px solid #eee;
+}
+.annual-reports-item:last-child {
+    border-bottom: 0;
+}
+.annual-reports-item h3 {
+    font-weight: 300;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+
+.annual-reports-item .annual-report-meta {
+    display: flex;
+    font-size: 16px;
+    padding: 12px 0;
+    align-items: center;
+}
+
+.annual-reports-item .annual-report-meta .datetime {
+    display: inline-block;
+    margin-right: 30px;
+    font-weight: 300;
+}
+
+.annual-report-meta .downloadlink a {
+    font-weight: 500;
+}
