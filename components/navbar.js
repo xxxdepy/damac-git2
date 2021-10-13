@@ -74,6 +74,83 @@ export default function Navbar({ className, children, navbarStyle }) {
 
 
 
+
+
+  /*
+  * Browse Properties Dropdown
+  */
+  const _customDropdowns = {
+    'browse-properties': false,
+    'enquire': false,
+  };
+
+  const [customDropdowns, setDropdownValues] = useState( _customDropdowns );
+
+  function handleDropdownClick(e) {
+    e.preventDefault();
+
+    const name = e.target.getAttribute('data-dropdownkey');
+
+    setDropdownValues({
+      ...customDropdowns,
+      [name]: !customDropdowns[name],
+    });
+
+    console.log(  customDropdowns );
+  }
+
+  const dropdownItems = {
+    'browse-properties': [
+        {
+          label: 'All Projects',
+          url: '/all-projects'
+        },
+        {
+          label: 'Projects',
+          url: '/projects'
+        },
+        {
+          label: 'Community',
+          url: '/communities'
+        },
+        {
+          label: 'Our Picks / Offer',
+          url: '/our-picks'
+        },
+    ],
+
+    'enquire': [
+        {
+          label: 'Sales',
+          url: '/sales-enquire'
+        },
+        {
+          label: 'Customer Care',
+          url: '/customer-care'
+        },
+        {
+          label: 'Press and media',
+          url: '#'
+        },
+        {
+          label: 'Investor Relations',
+          url: '/investor-relations'
+        },
+        {
+          label: 'Agent Relations',
+          url: '/agent-relations'
+        },
+        {
+          label: 'Careers',
+          url: '/careers'
+        },
+    ],
+  };
+
+
+
+
+
   return (
     
 
@@ -114,6 +191,8 @@ export default function Navbar({ className, children, navbarStyle }) {
                 <div className="col-7 col-md-4 header-left-col align-items-center">
                   <div className="menuicon-wrapper">
                     <a href="#" className="mainmenutoggle" onClick={handleMenuToggle}>Menu</a>
+
+
                   </div>
 
                   <div className="damac-logo">
@@ -130,12 +209,57 @@ export default function Navbar({ className, children, navbarStyle }) {
                 <div className="col-5 col-md-8 header-right-col">
                   
                   <div className="header-right-area d-flex justify-content-end">
-                    <div className="header-item-wrapper not-on-mobile">
-                      <a href="/damac-static/browse_properties.html" className="browseProperties">Browse Properties</a>
+                    <div className="header-item-wrapper not-on-mobile header-dropdown-container dropdown-to-centered">
+                      <a 
+                      href="/damac-static/browse_properties.html" 
+                      className="browseProperties"
+                      data-dropdownkey={'browse-properties'} 
+                      onClick={ handleDropdownClick } 
+
+                      >Browse Properties</a>
+
+                      <div data-dropdownkey={'browse-properties'} className={ `custom-nav-dropdown ${ customDropdowns['browse-properties'] ? 'is-active': '' } ` }>
+                        
+                        <ul className='navDropdownUl'>
+                          { 
+                            dropdownItems['browse-properties'].map( 
+                              (item, index) => <li key={index} className='navitem-dropdown'>
+                                <Link href={ item.url }>
+                                  {item.label}
+                                </Link>
+                              </li>
+                            ) 
+                          }
+                        </ul>
+
+                      </div>
+
                     </div>
 
-                    <div className="header-item-wrapper not-on-mobile">
-                      <a href="#" className="btn btn-primary">Enquire</a>
+                    <div className="header-item-wrapper header-dropdown-container not-on-mobile">
+                      <a href="#" 
+                      className="btn btn-primary header-dropdown-btn" 
+                      data-dropdownkey={'enquire'} 
+                      onClick={ handleDropdownClick } >
+                        Enquire
+                      </a>
+
+                      <div data-dropdownkey={'enquire'} className={ `custom-nav-dropdown ${ customDropdowns['enquire'] ? 'is-active': '' } ` }>
+                        
+                        <ul className='navDropdownUl'>
+                          { 
+                            dropdownItems['enquire'].map( 
+                              (item, index) => <li key={index} className='navitem-dropdown'>
+                                <Link href={ item.url }>
+                                  {item.label}
+                                </Link>
+                              </li>
+                            ) 
+                          }
+                        </ul>
+
+                      </div>
+
                     </div>
 
                     <div className="header-item-wrapper not-on-mobile">
