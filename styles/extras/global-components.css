@@ -435,9 +435,18 @@ List grid
     margin-bottom: 10px;
     position: relative;
 }
+
+.page-title .container {
+  position: relative;
+}
 .page-title h2 {
     margin: 0;
     position: relative;
+}
+.page-title .pagetitle-subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0;
 }
 
 @media ( max-width: 768px ) {

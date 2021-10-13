@@ -13,7 +13,7 @@ import Image from 'next/image'
 
 
 
-export default function PageTitle( { title, backgroundImage, isMobile } ) {
+export default function PageTitle( { title, subtitle, backgroundImage, isMobile } ) {
 
   const bgImage = <div className='pagetitle-bg-cover'>
     <Image
@@ -28,7 +28,12 @@ export default function PageTitle( { title, backgroundImage, isMobile } ) {
       <div className="page-title">
         {bgImage}
         <div className="container">
+          {subtitle &&
+            <p className={'pagetitle-subtitle'}>{subtitle}</p>
+          }
+
           <h2>{ title }</h2>
+          
         </div>
       </div>
     </>
