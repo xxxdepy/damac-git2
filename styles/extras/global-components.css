@@ -347,7 +347,29 @@
 
 
 
+/*
+List grid
+*/
+.ItemListGrid {
+    padding: 60px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px 44px;
+    padding-bottom: 100px;
+}
 
+
+@media ( max-width: 768px ) {
+  .ItemListGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media ( min-width: 768px ) {
+  .ItemListGrid.items-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 
 /*
@@ -356,10 +378,11 @@
 */
 
 .communityListGrid {
-    padding: 30px 0;
+    padding: 60px 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 60px 44px;
+    padding-bottom: 180px;
 }
 
 @media ( max-width: 768px ) {
@@ -397,4 +420,37 @@
 
 .image-card-item .cta-btn-wrapper {
     text-align: right;
+}
+
+
+
+/* page title  */
+
+.page-title {
+    padding: 80px;
+    padding-top: 120px;
+    background-color: var(--primary);
+    background-image: var(--primary-gradient);
+    color: #fff;
+    margin-bottom: 10px;
+    position: relative;
+}
+.page-title h2 {
+    margin: 0;
+    position: relative;
+}
+
+@media ( max-width: 768px ) {
+
+    .page-title {
+        padding: 20px 0;
+        padding-top: 80px;
+        background-color: var(--primary);
+        background-image: var(--primary-gradient);
+        color: #fff;
+        margin-bottom: 0px;
+    }
+    .page-title h2 {
+        margin: 0;
+    }
 }

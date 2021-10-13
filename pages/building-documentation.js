@@ -6,6 +6,7 @@ import Link from 'next/link'
 // Navbar
 import Navbar from '../components/navbar'
 import Footer from '../components/Footer'
+import PageTitle from '../components/PageTitle'
 
 
 import React, { Component } from "react";
@@ -32,12 +33,7 @@ function BuildingDocumentation() {
 
       <main className="main buildingdocumentation-main">
 
-           <div className="page-title">
-             <div className="container">
-               <h2>Building Documentation</h2>
-             </div>
-           </div>
-
+           <PageTitle title='Building Documentation'/>
 
            <section className="building-documentation-para">
              <div className="container">

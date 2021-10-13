@@ -73,32 +73,6 @@ a:hover {
 }
 
 
-.page-title {
-    padding: 80px;
-    padding-top: 120px;
-    background-color: var(--primary);
-    background-image: var(--primary-gradient);
-    color: #fff;
-    margin-bottom: 10px;
-}
-.page-title h2 {
-    margin: 0;
-}
-
-@media ( max-width: 768px ) {
-
-    .page-title {
-        padding: 20px 0;
-        padding-top: 80px;
-        background-color: var(--primary);
-        background-image: var(--primary-gradient);
-        color: #fff;
-        margin-bottom: 0px;
-    }
-    .page-title h2 {
-        margin: 0;
-    }
-}
 
 .main {
     min-height: 300px;
