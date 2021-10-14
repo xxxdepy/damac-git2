@@ -40,8 +40,8 @@ export default function ContactForm( { initialValues } ) {
                   
                   <div className='input-element select-element'>
                     
-                    <select name='gender' onChange={handleChange}>
-                        <option select>Mr</option>
+                    <select value={ values.gender } name='gender' onChange={handleChange}>
+                        <option selected>Mr</option>
                         <option>Miss</option>
                     </select>
 
