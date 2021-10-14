@@ -13,10 +13,9 @@ import { faFacebookF, faTwitter, faInstagram, faLinkedinIn } from '@fortawesome/
 
 
 
-export default function HomeBanner( { children} ) {
+export default function Footer( { children} ) {
   
-  
-
+ 
   return (
     <footer className={ 'damac-footer' }>
 

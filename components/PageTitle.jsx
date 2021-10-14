@@ -15,12 +15,12 @@ import Image from 'next/image'
 
 export default function PageTitle( { title, subtitle, backgroundImage, isMobile } ) {
 
-  const bgImage = <div className='pagetitle-bg-cover'>
+  const bgImage = backgroundImage ? (<div className='pagetitle-bg-cover'>
     <Image
          src={ backgroundImage }
          layout='fill'
       />
-  </div>;
+  </div>) : (<><div className='bg-overlay'></div></>);
 
   return (
 
