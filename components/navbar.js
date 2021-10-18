@@ -22,9 +22,6 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 export default function Navbar({ className, children, navbarStyle }) {
 
-
-
-
   
   // const slideOutMenu = {
   //   visible: false,
@@ -96,6 +93,7 @@ export default function Navbar({ className, children, navbarStyle }) {
       [name]: !customDropdowns[name],
     });
 
+
     console.log(  customDropdowns );
   }
 
@@ -149,14 +147,11 @@ export default function Navbar({ className, children, navbarStyle }) {
 
 
 
-
-
   return (
     
 
     <header className={`damac-header damac-nav  ${className} ${ slideOutMenuVisible ? 'slideout-active' : 'slideout-not-active'} `}>
           
-
           { (deviceIsMobile) && 
             <div className={ `mobileNavContainer` }>
               <div className="container">
@@ -265,12 +260,11 @@ export default function Navbar({ className, children, navbarStyle }) {
                     <div className="header-item-wrapper not-on-mobile">
 
                       <div className="dropdown dropdown-item-outer language-dropdown">
-                        <a href="#" className="dropdown-toggle"><span>English</span></a>
-                        <ul className="dropdown-menu">
-                          <li className="selected"><a className="dropdown-item" href="#">English</a></li>
-                          <li className=""><a className="dropdown-item" href="#">French</a></li>
-                          <li className=""><a className="dropdown-item" href="#">Espanol</a></li>
-                        </ul>
+                        <a href="#" className="dropdown-toggle language-dropdown-link">
+                            <span style={ {'margin-right': '6px'} }>English</span> 
+                            <FontAwesomeIcon size='xs' icon={ faChevronDown }/>
+                        </a>
+                        
                       </div>
 
                     </div>
