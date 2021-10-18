@@ -43,7 +43,7 @@ export default function BlogCardItem( { className, cardDetails  } ) {
           <div className={`${styles['metatags']}`}>
             {
               cardDetails.tags.map( (tag, idx) => 
-                <span className={`taglabel taglabel-${tag}`}>{tag}</span>
+                <span key={idx} className={`taglabel taglabel-${tag}`}>{tag}</span>
               )
             }
           </div>

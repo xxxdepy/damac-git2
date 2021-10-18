@@ -261,7 +261,7 @@ export default function Navbar({ className, children, navbarStyle }) {
 
                       <div className="dropdown dropdown-item-outer language-dropdown">
                         <a href="#" className="dropdown-toggle language-dropdown-link">
-                            <span style={ {'margin-right': '6px'} }>English</span> 
+                            <span style={ {'marginRight': '6px'} }>English</span> 
                             <FontAwesomeIcon size='xs' icon={ faChevronDown }/>
                         </a>
                         

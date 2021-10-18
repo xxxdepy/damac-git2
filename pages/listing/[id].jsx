@@ -1,3 +1,4 @@
+import React, { Component } from "react";
 import { useRouter } from 'next/router'
 
 import Head from 'next/head'
@@ -11,9 +12,8 @@ import Footer from '../../components/Footer'
 
 // 
 import HeroCoverImage from '../../components/sections/HeroCoverImage'
+import ItemDetailsSection from '../../components/sections/ItemDetailsSection'
 
-
-import React, { Component } from "react";
 
 // import styles from '../styles/.module.css'
 
@@ -46,8 +46,7 @@ function ListingPage() {
       <Navbar className="navbar-normal"></Navbar>
 
 
-      
-
+     
 
       <main className="main listing-main">
 
@@ -60,6 +59,9 @@ function ListingPage() {
            description={'Menaro Tower at Business bay'}
            location={'Dubailand, Dubai, United Arab Emirates'}
         />
+
+
+        <ItemDetailsSection imageBanner='/images/3d-tour-listing.jpg' />
 
 
       </main>

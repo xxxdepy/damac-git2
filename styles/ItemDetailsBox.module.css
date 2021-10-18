@@ -1,0 +1,36 @@
+
+.itemdetailbox {
+	color: #000;
+	padding: 18px 0;
+}
+
+.itemdetailbox2 {
+	color: #000;
+}
+
+
+.main-title {
+	font-size: 32px;
+	margin-bottom: 8px;
+	font-weight: 400;
+}
+.sub-title {
+	font-size: 20px;
+	margin-bottom: 0;
+	opacity: 0.8;
+}
+
+
+@media ( max-width: 768px ) {
+
+	.main-title {
+		font-size: 24px;
+		margin-bottom: 8px;
+		font-weight: 400;
+	}
+	.sub-title {
+		font-size: 18px;
+		margin-bottom: 0;
+	}
+
+}
